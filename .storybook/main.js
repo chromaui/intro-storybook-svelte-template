@@ -1,10 +1,11 @@
 module.exports = {
-  "stories": [
+  stories: [
     "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)",
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
-}
+    "@storybook/addon-essentials",
+    "@storybook/addon-svelte-csf",
+  ],
+};

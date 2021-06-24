@@ -24,10 +24,11 @@
     "@babel/core": "^7.12.10",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
-    "@storybook/addon-actions": "^6.2.8",
-    "@storybook/addon-essentials": "^6.2.8",
-    "@storybook/addon-links": "^6.2.8",
-    "@storybook/svelte": "^6.2.8",
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-essentials": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
+    "@storybook/addon-svelte-csf": "^1.1.0",
+    "@storybook/svelte": "^6.3.0",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/svelte": "^3.0.3",
     "babel-loader": "^8.2.2",
@@ -50,12 +51,22 @@
       "^.+\\.js$": "babel-jest",
       "^.+\\.svelte$": "jest-transform-svelte"
     },
-    "moduleFileExtensions": ["js", "svelte", "json"],
+    "moduleFileExtensions": [
+      "js",
+      "svelte",
+      "json"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|scss|stylesheet)$": "<rootDir>/__mocks__/styleMock.js"
     },
-    "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
-    "testPathIgnorePatterns": ["/node_modules/", "/build/", "/storybook-static/"]
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/",
+      "/storybook-static/"
+    ]
   }
 }
