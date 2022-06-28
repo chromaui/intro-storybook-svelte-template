@@ -10,4 +10,11 @@ module.exports = {
     "@storybook/addon-svelte-csf",
     "@storybook/addon-interactions",
   ],
+  framework: "@storybook/svelte",
+  core: {
+    builder: "@storybook/builder-webpack4",
+  },
+  features: {
+    postcss: false,
+  },
 };
