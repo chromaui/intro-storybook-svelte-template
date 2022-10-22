@@ -12,6 +12,7 @@ module.exports = {
   ],
   features: {
     postcss: false,
+    interactionsDebugger: true,
   },
   framework: "@storybook/svelte",
   core: {
