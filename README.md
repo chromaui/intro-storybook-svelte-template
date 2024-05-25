@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://www.chromatic.com/">
     <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
@@ -9,7 +8,7 @@
   Chromatic's Intro to Storybook Svelte template
 </h1>
 
- This template ships with the main Svelte and Storybook configuration files you'll need to get up and running fast.
+This template ships with the main Svelte and Storybook configuration files you'll need to get up and running fast.
 
 ## 🚅 Quick start
 
@@ -47,46 +46,45 @@
 A quick look at the top-level files and directories included with this template.
 
     .
-    ├── __mocks__
     ├── .storybook
     ├── node_modules
     ├── public
-    ├── scripts
     ├── src
-    ├── .babelrc
     ├── .gitignore
-    ├── yarn.lock
-    ├── package.json
+    ├── index.html
+    ├── jsconfig.json
     ├── LICENSE
-    ├── rollup.config.json
-    └── README.md
+    ├── package.json
+    ├── README.md
+    ├── svelte.config.js
+    ├── vite.config.js
+    └── yarn.lock
 
-1.  **`__mocks__`**: This directory contains all of the modules of code that your project depends on for testing with Jest.
+1.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/configure) files.
 
-2.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/react/configure/overview) files.
+2.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
 
-3.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
+3.  **`public`**: This directory will contain the development and production build of the site.
 
-4.  **`public`**: This directory will contain the development and production build of the site.
+4.  **`src`**: This directory will contain all of the code related to what you will see on your application.
 
-5.  **`scripts`**: This directory will contain all the modules required should you want to setup Typescript in your project.
+5.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
 
-6.  **`src`**: This directory will contain all of the code related to what you will see on your application.
+6.  **`.index.html`**: This file is the main HTML page for your site. It's the template HTML file that Svelte will use to generate your site.
 
-7.  **`.babelrc`**: This file tells [babel](https://babeljs.io/) how to transpile the application's code.
+7.  **`jsconfig.json`**: This is a configuration file for [VSCode](https://code.visualstudio.com/) that tells the editor how to handle the Svelte files.
 
-8.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+8.  **`LICENSE`**: The template is licensed under the MIT licence.
 
-9.  **`.rollup.config.json`**: This is a configuration file for [rollup.js](https://rollupjs.org/guide/en/). Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as libraries or applications.
+9.  **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
 
-10. **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
+10. **`README.md`**: A text file containing useful reference information about the project.
 
-11. **`LICENSE`**: The template is licensed under the MIT licence.
+11. **`svelte.config.js`**: This is a configuration file for Svelte that tells the compiler how to handle the Svelte files.
 
-12. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+12. **`vite.config.js`**: This is a configuration file for Vite that tells the bundler how to build the project, which plugins to use and other settings.
 
-13. **`README.md`**: A text file containing useful reference information about the project.
-
+13. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
 
 ## Contribute
 
@@ -96,4 +94,4 @@ If you encounter an issue with the template, we encourage you to open an issue i
 
 1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/svelte/en/get-started/).
 2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
-2. See our official documentation at [Storybook](https://storybook.js.org/).
+3. See our official documentation at [Storybook](https://storybook.js.org/).
