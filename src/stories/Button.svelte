@@ -1,36 +1,30 @@
-<script>
+<script lang="ts">
   import './button.css';
 
-  /**
-   * Is this the principal call to action on the page?
-   */
-  export let primary = false;
+  interface Props {
+    /** Is this the principal call to action on the page? */
+    primary?: boolean;
+    /** What background color to use */
+    backgroundColor?: string;
+    /** How large should the button be? */
+    size?: 'small' | 'medium' | 'large';
+    /** Button contents */
+    label: string;
+    /** The onclick event handler */
+    onclick?: () => void;
+  }
 
-  /**
-   * @type {string} What background color to use
-   */
-  export let backgroundColor = undefined;
-
-  /**
-   * @type {'small' | 'medium' | 'large'} How large should the button be?
-   */
-  export let size = 'medium';
-
-  /**
-   * @type {string} Button contents
-   */
-  export let label;
-
-  $: mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-
-  $: style = backgroundColor ? `background-color: ${backgroundColor}` : '';
+  const { primary = false, backgroundColor, size = 'medium', label, ...props }: Props = $props();
+  
+  let mode = $derived(primary ? 'storybook-button--primary' : 'storybook-button--secondary');
+  let style = $derived(backgroundColor ? `background-color: ${backgroundColor}` : '');
 </script>
 
 <button
   type="button"
   class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
   {style}
-  on:click
+  {...props}
 >
   {label}
 </button>
