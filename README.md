@@ -47,44 +47,62 @@ A quick look at the top-level files and directories included with this template.
 
     .
     ├── .storybook
+    ├── .yarn
     ├── node_modules
     ├── public
     ├── src
     ├── .gitignore
+    ├── .yarnrc.yml
     ├── index.html
-    ├── jsconfig.json
     ├── LICENSE
     ├── package.json
-    ├── README.md
     ├── svelte.config.js
-    ├── vite.config.js
-    └── yarn.lock
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    ├── vite.config.ts
+    ├── vitest.shims.d.ts
+    ├── vitest.workspace.ts
+    ├── yarn.lock
+    └── README.md
 
 1.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/configure) files.
 
-2.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
+2.  **`.yarn`**: This directory contains the configuration files for Yarn including the cache and the global packages.
 
-3.  **`public`**: This directory will contain the development and production build of the site.
+3.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
 
-4.  **`src`**: This directory will contain all of the code related to what you will see on your application.
+4.  **`public`**: This directory will contain the development and production build of the site.
 
-5.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+5.  **`src`**: This directory will contain all of the code related to what you will see on your application.
 
-6.  **`.index.html`**: This file is the main HTML page for your site. It's the template HTML file that Svelte will use to generate your site.
+6.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
 
-7.  **`jsconfig.json`**: This is a configuration file for [VSCode](https://code.visualstudio.com/) that tells the editor how to handle the Svelte files.
+7.  **`.yarnrc.yml`**: This file contains the configuration for Yarn. It's used to define the project's settings, such as caching and other settings.
 
-8.  **`LICENSE`**: The template is licensed under the MIT licence.
+8.  **`index.html`**: This is the HTML page that is served when generating a development or production build.
 
-9.  **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
+9.  **`LICENSE`**: The template is licensed under the MIT licence.
 
-10. **`README.md`**: A text file containing useful reference information about the project.
+10. **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
 
-11. **`svelte.config.js`**: This is a configuration file for Svelte that tells the compiler how to handle the Svelte files.
+11. **`svelte.config.js`**: This file contains the configuration for Svelte, a modern JavaScript framework for building user interfaces. It includes settings for preprocessors, compiler options, and other Svelte-specific configurations.
 
-12. **`vite.config.js`**: This is a configuration file for Vite that tells the bundler how to build the project, which plugins to use and other settings.
+12. **`tsconfig.app.json`**: This file contains the TypeScript compiler options for the project.
 
-13. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+13. **`tsconfig.node.json`**: This file contains the TypeScript compiler options required to manage the Node.js environment in the project configuration files. Used to help distinguish between configurations for different parts of the project.
+
+14. **`tsconfig.json`**: This file is the root TypeScript configuration file that specifies the root files and the compiler options that could be extended by other configuration files in the project.
+
+15. **`vite.config.ts`**: This is the configuration file for [Vite](https://vitejs.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
+
+16. **`vitest.shims.d.ts`**: This file contains TypeScript type definitions for Vitest, a testing framework that is used to run tests in the project.
+
+17. **`vitest.workspace.ts`**: This file contains the configuration for Vitest, which is used to run tests in the project.
+
+18. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+
+19. **`README.md`**: A text file containing useful reference information about the project.
 
 ## Contribute
 
@@ -93,5 +111,4 @@ If you encounter an issue with the template, we encourage you to open an issue i
 ## Learning Storybook
 
 1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/svelte/en/get-started/).
-2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
-3. See our official documentation at [Storybook](https://storybook.js.org/).
+2. See our official documentation at [Storybook](https://storybook.js.org/).
