@@ -62,7 +62,6 @@ A quick look at the top-level files and directories included with this template.
     ├── tsconfig.node.json
     ├── vite.config.ts
     ├── vitest.shims.d.ts
-    ├── vitest.workspace.ts
     ├── yarn.lock
     └── README.md
 
@@ -98,11 +97,9 @@ A quick look at the top-level files and directories included with this template.
 
 16. **`vitest.shims.d.ts`**: This file contains TypeScript type definitions for Vitest, a testing framework that is used to run tests in the project.
 
-17. **`vitest.workspace.ts`**: This file contains the configuration for Vitest, which is used to run tests in the project.
+17. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
 
-18. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
-
-19. **`README.md`**: A text file containing useful reference information about the project.
+18. **`README.md`**: A text file containing useful reference information about the project.
 
 ## Contribute
 
