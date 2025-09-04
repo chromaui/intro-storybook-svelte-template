@@ -1,6 +1,6 @@
-/** @type { import('@storybook/svelte').Preview } */
-const preview = {
-  actions: { argTypesRegex: "^on.*" },
+import type { Preview } from "@storybook/svelte-vite";
+
+const preview: Preview = {
   parameters: {
     controls: {
       matchers: {

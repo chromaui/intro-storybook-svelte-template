@@ -17,26 +17,30 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "init-msw": "msw init public/"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.3.2",
-    "@storybook/addon-interactions": "^8.3.2",
-    "@storybook/addon-links": "^8.3.2",
-    "@storybook/blocks": "^8.3.2",
-    "@storybook/svelte": "^8.3.2",
-    "@storybook/svelte-vite": "^8.3.2",
-    "@storybook/test": "^8.3.2",
-    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@chromatic-com/storybook": "^4.1.0",
+    "@storybook/addon-docs": "9.1.1",
+    "@storybook/addon-svelte-csf": "^5.0.7",
+    "@storybook/addon-vitest": "^9.1.1",
+    "@storybook/svelte-vite": "9.1.1",
+    "@sveltejs/vite-plugin-svelte": "^6.1.0",
+    "@tsconfig/svelte": "^5.0.4",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
     "msw": "^2.3.0",
-    "msw-storybook-addon": "^2.0.3",
-    "storybook": "^8.3.2",
-    "svelte": "^4.2.12",
-    "vite": "^5.2.0"
+    "msw-storybook-addon": "^2.0.5",
+    "playwright": "^1.54.2",
+    "storybook": "9.1.1",
+    "svelte": "^5.37.3",
+    "svelte-check": "^4.3.1",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.4"
   },
-  "resolutions": {
-    "jackspeak": "2.1.1"
-  }
+  "packageManager": "yarn@4.9.2"
 }
