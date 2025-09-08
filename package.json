@@ -23,7 +23,7 @@
     "init-msw": "msw init public/"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^4.1.0",
+    "@chromatic-com/storybook": "4.0.1",
     "@storybook/addon-docs": "9.1.1",
     "@storybook/addon-svelte-csf": "^5.0.7",
     "@storybook/addon-vitest": "^9.1.1",
